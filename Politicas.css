@@ -105,53 +105,33 @@ select {
 
 main {
     padding: 20px;
+    padding-left: 50px;
+    background-color: #ed8484 ;
   }
   
-  .product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .product-image {
-    width: 45%;
-  }
-  
-  .product-image img {
-    max-width: 100%;
-  }
-  
-  .product-details {
-    width: 45%;
-  }
-  
-  .product-details h2 {
+  h2 {
     font-size: 24px;
     margin-top: 0;
   }
   
-  .product-details .price {
+  h3 {
     font-size: 20px;
-    margin: 10px 0;
+    margin-top: 20px;
   }
   
-  .product-details .description {
+  ol {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20
+}
+
+ol li {
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  
+  p {
     line-height: 1.5;
-  }
-  
-  .buy-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .buy-button:hover {
-    background-color: #555;
   }
 
 footer {

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
-    <link rel="stylesheet" href="Producto.css">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="Compra.css">
 </head>
 <body>
     <header>
@@ -32,17 +32,24 @@
         </div>
     </header>
     <main>
-        <section class="product">
-          <div class="product-image">
-            <img src="./IMG/camisa.jpg" alt="Producto">
-          </div>
-          <div class="product-details">
-            <h2>Camiseta blanca</h2>
-            <p class="price">$20.00</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit mauris eu diam lobortis, sed lobortis nulla vestibulum. Quisque ultrices blandit commodo. Ut suscipit, metus at elementum luctus, enim mi pulvinar leo, non eleifend nisl ipsum eget metus.</p>
-            <button class="buy-button">Comprar</button>
-          </div>
-        </section>
+        <h2>Formulario de Compra</h2>
+        <form action="#" method="post">
+          <label for="first-name">Nombre:</label>
+          <input type="text" id="first-name" name="first-name" required>
+          <label for="last-name">Apellido:</label>
+          <input type="text" id="last-name" name="last-name" required>
+          <label for="location">Ubicación:</label>
+          <input type="text" id="location" name="location" required>
+          <label for="phone">Teléfono:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+          <label for="payment-method">Método de Pago:</label>
+          <select id="payment-method" name="payment-method" required>
+            <option value="">Seleccionar</option>
+            <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+            <option value="efectivo">Pago en Tienda de Conveniencia</option>
+          </select>
+          <button class="boton-compra" type="submit">Comprar</button>
+        </form>
       </main>
     <footer>
         <div class="footer-container">

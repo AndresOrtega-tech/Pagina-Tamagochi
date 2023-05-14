@@ -54,17 +54,6 @@ header {
     list-style: none;
 }
 
-input[type="text"],
-input[type="tel"],
-select {
-  width: 100%;
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-}
-
 .slider {
     width: 70%;
     height: 350px;
@@ -105,54 +94,53 @@ select {
 
 main {
     padding: 20px;
+    width: 50%;
+    margin: auto;
   }
   
-  .product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .product-image {
-    width: 45%;
-  }
-  
-  .product-image img {
-    max-width: 100%;
-  }
-  
-  .product-details {
-    width: 45%;
-  }
-  
-  .product-details h2 {
+  h2 {
     font-size: 24px;
     margin-top: 0;
   }
   
-  .product-details .price {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  label {
     font-size: 20px;
-    margin: 10px 0;
+    margin-top: 10px;
   }
   
-  .product-details .description {
-    line-height: 1.5;
+  input[type="text"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
   }
   
-  .buy-button {
+  input[type="submit"] {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .buy-button:hover {
-    background-color: #555;
-  }
+}
+
+.boton-compra {
+    padding: 10px;
+    background-color: #b3bddc;
+    border: none;
+    border-radius: 3px;
+}
 
 footer {
     background-color: #b3bddc;
